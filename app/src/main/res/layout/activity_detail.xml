@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/app_header_layout" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Customer Name"
+                        android:textSize="@dimen/_14sdp"
+                        android:textColor="@color/colorBlackLite"/>
+
+                    <EditText
+                        android:id="@+id/txtCustomerName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/rounded_edit_text"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Products"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:textSize="@dimen/_14sdp"
+                        android:textColor="@color/colorBlackLite"/>
+
+                    <EditText
+                        android:id="@+id/txtProducts"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/rounded_edit_text"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Location"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:textSize="@dimen/_14sdp"
+                        android:textColor="@color/colorBlackLite"/>
+
+                    <EditText
+                        android:id="@+id/txtLocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/rounded_edit_text"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Disbursal Date"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:textSize="@dimen/_14sdp"
+                        android:textColor="@color/colorBlackLite"/>
+
+                    <EditText
+                        android:id="@+id/txtDisbursalDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/rounded_edit_text"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Loan Account No."
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:textSize="@dimen/_14sdp"
+                        android:textColor="@color/colorBlackLite"/>
+
+                    <EditText
+                        android:id="@+id/txtLoanAccountNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/rounded_edit_text"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bank Name"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:textSize="@dimen/_14sdp"
+                        android:textColor="@color/colorBlackLite"/>
+
+                    <EditText
+                        android:id="@+id/txtBankName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/rounded_edit_text"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ROI"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:textSize="@dimen/_14sdp"
+                        android:textColor="@color/colorBlackLite"/>
+
+                    <EditText
+                        android:id="@+id/txtROI"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/rounded_edit_text"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Processing Fee"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:textSize="@dimen/_14sdp"
+                        android:textColor="@color/colorBlackLite"/>
+
+                    <EditText
+                        android:id="@+id/txtProcessingFee"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/rounded_edit_text"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile No."
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:textSize="@dimen/_14sdp"
+                        android:textColor="@color/colorBlackLite"/>
+
+                    <EditText
+                        android:id="@+id/txtMobileNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/rounded_edit_text"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="E-Mail ID"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:textSize="@dimen/_14sdp"
+                        android:textColor="@color/colorBlackLite"/>
+
+                    <EditText
+                        android:id="@+id/txtEmailId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/rounded_edit_text"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Loan Amount"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:textSize="@dimen/_14sdp"
+                        android:textColor="@color/colorBlackLite"/>
+
+                    <EditText
+                        android:id="@+id/txtLoanAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/rounded_edit_text"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tenure"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:textSize="@dimen/_14sdp"
+                        android:textColor="@color/colorBlackLite"/>
+
+                    <EditText
+                        android:id="@+id/txtTenure"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/rounded_edit_text"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="EMI Date"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:textSize="@dimen/_14sdp"
+                        android:textColor="@color/colorBlackLite"/>
+
+                    <EditText
+                        android:id="@+id/txtEMIDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/rounded_edit_text"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Debit Account No."
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:textSize="@dimen/_14sdp"
+                        android:textColor="@color/colorBlackLite"/>
+
+                    <EditText
+                        android:id="@+id/txtDebitAccountNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/rounded_edit_text"/>
+                </LinearLayout>
+
+            </ScrollView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:hint="Spouse Date Of Birth"
+                    android:outlineAmbientShadowColor="@color/colorPrimaryDark"
+                    android:outlineSpotShadowColor="@color/colorPrimaryDark"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    app:boxCornerRadiusBottomEnd="@dimen/_4sdp"
+                    app:boxCornerRadiusBottomStart="@dimen/_4sdp"
+                    app:boxCornerRadiusTopEnd="@dimen/_4sdp"
+                    app:boxCornerRadiusTopStart="@dimen/_4sdp"
+                    app:helperTextTextColor="@color/colorPrimaryDark"
+                    app:hintTextColor="@color/colorPrimaryDark"
+                    app:placeholderTextColor="@color/colorPrimaryDark">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtSupposeDOB"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/black"
+                        android:focusable="false"
+                        android:drawableRight="@drawable/ic_baseline_calendar_month"
+                        android:focusableInTouchMode="false"
+                        android:textColorHint="@color/colorPrimaryDark"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/_14sdp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:hint="Customer Category"
+                    android:outlineAmbientShadowColor="@color/colorPrimaryDark"
+                    android:outlineSpotShadowColor="@color/colorPrimaryDark"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    app:boxCornerRadiusBottomEnd="@dimen/_4sdp"
+                    app:boxCornerRadiusBottomStart="@dimen/_4sdp"
+                    app:boxCornerRadiusTopEnd="@dimen/_4sdp"
+                    app:boxCornerRadiusTopStart="@dimen/_4sdp"
+                    app:helperTextTextColor="@color/colorPrimaryDark"
+                    app:hintTextColor="@color/colorPrimaryDark"
+                    app:placeholderTextColor="@color/colorPrimaryDark">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtClickCustCat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/black"
+                        android:focusable="false"
+                        android:drawableRight="@drawable/ic_bellow_arrow"
+                        android:focusableInTouchMode="false"
+                        android:textColorHint="@color/colorPrimaryDark"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/_14sdp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:hint="Marital status"
+                    android:outlineAmbientShadowColor="@color/colorPrimaryDark"
+                    android:outlineSpotShadowColor="@color/colorPrimaryDark"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    app:boxCornerRadiusBottomEnd="@dimen/_4sdp"
+                    app:boxCornerRadiusBottomStart="@dimen/_4sdp"
+                    app:boxCornerRadiusTopEnd="@dimen/_4sdp"
+                    app:boxCornerRadiusTopStart="@dimen/_4sdp"
+                    app:helperTextTextColor="@color/colorPrimaryDark"
+                    app:hintTextColor="@color/colorPrimaryDark"
+                    app:placeholderTextColor="@color/colorPrimaryDark">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtMeterialStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/black"
+                        android:focusable="false"
+                        android:drawableRight="@drawable/ic_bellow_arrow"
+                        android:focusableInTouchMode="false"
+                        android:textColorHint="@color/colorPrimaryDark"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/_14sdp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:hint="Educational Qualification"
+                    android:outlineAmbientShadowColor="@color/colorPrimaryDark"
+                    android:outlineSpotShadowColor="@color/colorPrimaryDark"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    app:boxCornerRadiusBottomEnd="@dimen/_4sdp"
+                    app:boxCornerRadiusBottomStart="@dimen/_4sdp"
+                    app:boxCornerRadiusTopEnd="@dimen/_4sdp"
+                    app:boxCornerRadiusTopStart="@dimen/_4sdp"
+                    app:helperTextTextColor="@color/colorPrimaryDark"
+                    app:hintTextColor="@color/colorPrimaryDark"
+                    app:placeholderTextColor="@color/colorPrimaryDark">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtClickEdu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/black"
+                        android:focusable="false"
+                        android:drawableRight="@drawable/ic_bellow_arrow"
+                        android:focusableInTouchMode="false"
+                        android:textColorHint="@color/colorPrimaryDark"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/_14sdp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:hint="PAN Card"
+                    android:outlineAmbientShadowColor="@color/colorPrimaryDark"
+                    android:outlineSpotShadowColor="@color/colorPrimaryDark"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    app:boxCornerRadiusBottomEnd="@dimen/_4sdp"
+                    app:boxCornerRadiusBottomStart="@dimen/_4sdp"
+                    app:boxCornerRadiusTopEnd="@dimen/_4sdp"
+                    app:boxCornerRadiusTopStart="@dimen/_4sdp"
+                    app:helperTextTextColor="@color/colorPrimaryDark"
+                    app:hintTextColor="@color/colorPrimaryDark"
+                    app:placeholderTextColor="@color/colorPrimaryDark">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtPanCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/colorPrimaryDark"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/_14sdp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:hint="Aadhaar Card"
+                    android:outlineAmbientShadowColor="@color/colorPrimaryDark"
+                    android:outlineSpotShadowColor="@color/colorPrimaryDark"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    app:boxCornerRadiusBottomEnd="@dimen/_4sdp"
+                    app:boxCornerRadiusBottomStart="@dimen/_4sdp"
+                    app:boxCornerRadiusTopEnd="@dimen/_4sdp"
+                    app:boxCornerRadiusTopStart="@dimen/_4sdp"
+                    app:helperTextTextColor="@color/colorPrimaryDark"
+                    app:hintTextColor="@color/colorPrimaryDark"
+                    app:placeholderTextColor="@color/colorPrimaryDark">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtAadharCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/colorPrimaryDark"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/_14sdp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:hint="Bank Name"
+                    android:outlineAmbientShadowColor="@color/colorPrimaryDark"
+                    android:outlineSpotShadowColor="@color/colorPrimaryDark"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    app:boxCornerRadiusBottomEnd="@dimen/_4sdp"
+                    app:boxCornerRadiusBottomStart="@dimen/_4sdp"
+                    app:boxCornerRadiusTopEnd="@dimen/_4sdp"
+                    app:boxCornerRadiusTopStart="@dimen/_4sdp"
+                    app:helperTextTextColor="@color/colorPrimaryDark"
+                    app:hintTextColor="@color/colorPrimaryDark"
+                    app:placeholderTextColor="@color/colorPrimaryDark">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtBankName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/colorPrimaryDark"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/_14sdp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:hint="Account Number"
+                    android:outlineAmbientShadowColor="@color/colorPrimaryDark"
+                    android:outlineSpotShadowColor="@color/colorPrimaryDark"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    app:boxCornerRadiusBottomEnd="@dimen/_4sdp"
+                    app:boxCornerRadiusBottomStart="@dimen/_4sdp"
+                    app:boxCornerRadiusTopEnd="@dimen/_4sdp"
+                    app:boxCornerRadiusTopStart="@dimen/_4sdp"
+                    app:helperTextTextColor="@color/colorPrimaryDark"
+                    app:hintTextColor="@color/colorPrimaryDark"
+                    app:placeholderTextColor="@color/colorPrimaryDark">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtBankNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/colorPrimaryDark"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/_14sdp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <include
+                    layout="@layout/lytform_three"/>
+
+            </LinearLayout>
+
+
+
+        </FrameLayout>
+
+
+
+    </LinearLayout>
+</layout>

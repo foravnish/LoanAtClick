@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0988c8</color>
+    <color name="colorPrimaryDark">#2a2929</color>
+    <color name="colorAccent">#4A4848</color>
+    <color name="while_color">#FFFFFF</color>
+    <color name="gray">#808080</color>
+    <color name="white_transperant">#A9FFFFFF</color>
+
+    <color name="yellow">#ffc722</color>
+    <color name="light_yellow">#F6D46F</color>
+    <color name="dark_gray">#222222</color>
+    <color name="light_gray">#9F9B9B</color>
+    <color name="most_light_gray">#EEEEEE</color>
+    <color name="hint_color">#9B9B9B</color>
+
+    <color name="header_color">#343a40</color>
+    <color name="recycleview_bg">#E1E6EB</color>
+    <color name="recycleview_bg_lite1">#8DEEEFF0</color>
+
+    <color name="colorBlackLite">#C4000000</color>
+
+    <color name="light_pink">#feebe6</color>
+    <color name="light_app">#E9F6FD</color>
+
+    <color name="transparent">#66555555</color>
+    <color name="text_gray">#555555</color>
+    <color name="black">#000000</color>
+    <color name="red">#F44336</color>
+    <color name="green">#4CAF50</color>
+    <color name="orange">#FF9800</color>
+
+
+</resources>

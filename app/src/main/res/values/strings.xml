@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">LoanAtClick</string>
+
+    <string name="err_check_interner">Please check internet</string>
+    <string name="signin_in_to">SignIn into your account</string>
+    <string name="signup_in_to">SignUp into your account</string>
+    <string name="have_you_referral">Have you referral code?</string>
+    <string name="already_have_an_account">Already Have an Account?</string>
+    <string name="detail"><u>Detail</u></string>
+    <string name="track"><u>Track</u></string>
+
+    <string name="server_error">"Server is busy, Please try after sometime"</string>
+    <string name="internet_not_connect">Internet is not connected</string>
+    <string name="something_went_wrong">"Something went wrong. Please try again!!"</string>
+    <string name="internet_is_slow">"Your internet connection is very slow. Please try again!!"</string>
+    <string name="internet_not_message">Please check your internet connection and try again</string>
+    <string name="server_error_title">Oops!</string>
+    <string name="server_error_message_new">A software update is in progress and will take about 2min. Please retry after 2min. If issue persists, contact customer care.</string>
+    <string name="desc_data">The product image(s) shown are representative of the actual product. The actual picture may slightly vary in packaging or the content of packaging. It is recommended to read the labels, batch details, manufacturing details, expiration date, list of ingredients, directions, and warnings, etc., as contained in the actual product label before consuming or utilising the product. For other information or query, please contact us.</string>
+    <string name="str_secure">Your Personal data will be used only to process your order, delivery and support your experience throughout your shopping with us. GroFiesta, ensures to keep their clients data safe and secure.</string>
+
+    <string name="verify_mobile">Verify Mobile</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="dont_recieve">Didn\'t Receive the OTP?</string>
+    <string name="resend_code">Resend Code</string>
+    <string name="phone_verification_message">Enter the OTP code sent to your phone</string>
+
+</resources>

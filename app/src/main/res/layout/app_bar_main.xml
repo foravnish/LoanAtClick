@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/while_color"
+    android:orientation="vertical"
+    tools:context=".home.HomeActivity">
+
+    <FrameLayout
+        android:id="@+id/lytTopFrame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/lytTop"
+            layout="@layout/app_main_header_layout" />
+    </FrameLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lytTopFrame">
+
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/navigation"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+        <com.loan.atclick.utils.BottomNavigationViewEx
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/divider_bottom_nav_bar"
+            android:theme="@style/Widget.BottomNavigationView"
+            android:visibility="gone"
+            app:itemIconTint="@drawable/nav_item_color_state_bottom"
+            app:itemTextColor="@drawable/nav_item_color_state_bottom"
+            app:menu="@menu/bottom_navigation_menu" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/contentFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_200sdp"
+        android:visibility="gone" />
+
+</RelativeLayout>

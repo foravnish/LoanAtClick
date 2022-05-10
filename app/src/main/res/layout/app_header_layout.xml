@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rytMainHL"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    android:background="@color/colorPrimaryDark"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <com.skydoves.elasticviews.ElasticImageView
+        android:id="@+id/imgBack"
+        android:layout_width="@dimen/_45sdp"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/_10sdp"
+        android:tint="@color/while_color"
+        app:imageView_duration="250"
+        app:imageView_scale="0.7"
+        app:srcCompat="@drawable/ic_back_arrow" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtPageTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/_50sdp"
+        android:layout_marginRight="@dimen/_50sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:text="@string/app_name"
+        android:textColor="@color/while_color"
+        android:textSize="@dimen/_14sdp" />
+
+
+    <com.skydoves.elasticviews.ElasticImageView
+        android:id="@+id/imgSearchEmp"
+        android:layout_width="@dimen/_45sdp"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_14sdp"
+        android:tint="@color/while_color"
+        app:imageView_duration="150"
+        android:visibility="gone"
+        app:imageView_scale="0.95"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@drawable/ic_search" />
+
+    <LinearLayout
+        android:id="@+id/lytSearchView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/while_color"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <com.skydoves.elasticviews.ElasticImageView
+            android:id="@+id/imgCloseSearchView"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_10sdp"
+            android:tint="@color/black"
+            app:imageView_duration="250"
+            app:imageView_scale="0.7"
+            app:srcCompat="@drawable/ic_back_arrow" />
+
+        <EditText
+            android:id="@+id/edtSearchText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/poppins"
+            android:hint="Search..."
+            android:maxLines="1"
+            android:textColor="@color/while_color"
+            android:textColorHint="@color/while_color"
+            android:textSize="@dimen/_14sdp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
