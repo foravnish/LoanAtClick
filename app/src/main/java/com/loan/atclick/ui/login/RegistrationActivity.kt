@@ -43,6 +43,8 @@ class RegistrationActivity : BaseActivity() {
             showAlert("Please Enter Email Id")
         else if (editPin.text.toString().isEmpty())
             showAlert("Please Enter Pin")
+        else if (editPin.text.toString().length<6)
+            showAlert("Please Enter 6 digit Pin")
         else{
             callRegistrationApi()
         }

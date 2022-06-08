@@ -94,5 +94,6 @@ dependencies {
     implementation "androidx.activity:activity-ktx:1.4.0"
 
     implementation 'com.github.dhaval2404:imagepicker-support:1.7.1'
+    implementation 'com.github.MikeOrtiz:TouchImageView:2.3.2' // Android X
 
 }

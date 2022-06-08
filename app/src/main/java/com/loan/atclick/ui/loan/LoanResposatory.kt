@@ -304,8 +304,8 @@ class LoanResposatory {
     @SuppressLint("CheckResult")
     fun getDashboard(
         context: Context,  showDialog: Boolean
-    ): MutableLiveData<ApiResponseModels.ApplyLoanResponse> {
-        val mLiveData = MutableLiveData<ApiResponseModels.ApplyLoanResponse>()
+    ): MutableLiveData<ApiResponseModels.DashboardBannerResponse> {
+        val mLiveData = MutableLiveData<ApiResponseModels.DashboardBannerResponse>()
         if (NetworkHandling.isConnected(context)) {
             if (showDialog) (context as BaseActivity).showDialog()
             apiInterface!!.getDashboard(Prefences.getUserId(context)!!)

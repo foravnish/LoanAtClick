@@ -20,20 +20,13 @@
 
 
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10sdp"
-            android:src="@drawable/cir1"/>
-
-            <ImageView
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvBaners"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:src="@drawable/cir1"/>
+                android:layout_marginBottom="@dimen/_60sdp"/>
 
         </LinearLayout>
-
 
 
         <com.skydoves.elasticviews.ElasticButton

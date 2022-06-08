@@ -129,6 +129,6 @@ interface ApiInterface {
     @GET(ApiUrls.DASHBOARD + "/{user_id}")
     fun getDashboard(
         @Path("user_id") id: String,
-    ): Observable<ApiResponseModels.ApplyLoanResponse>
+    ): Observable<ApiResponseModels.DashboardBannerResponse>
 
 }

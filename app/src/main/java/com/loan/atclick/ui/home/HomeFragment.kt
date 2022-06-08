@@ -10,12 +10,16 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.GridLayoutManager
 import com.accountapp.accounts.base.BaseFragment
 import com.loan.atclick.R
+import com.loan.atclick.adapter.DashboardBannerAdapter
 import com.loan.atclick.databinding.FragmentHomeBinding
 import com.loan.atclick.login.LoanViewModel
+import com.loan.atclick.ui.home.ImagePreviewActivity
 import com.loan.atclick.ui.loan.ApplicationFormActivity
 import com.loan.atclick.utils.Utility
+import kotlinx.android.synthetic.main.fragment_home.*
 
 
 /**
@@ -36,7 +40,6 @@ class HomeFragment : BaseFragment() {
 
     lateinit var binding: FragmentHomeBinding
     val mContext by lazy { context }
-    var fragment: Fragment? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -73,10 +76,25 @@ class HomeFragment : BaseFragment() {
             true
         )!!.observe(this, Observer {
             if (it.success) {
-
+                initAdapter(it.images)
             }
         })
 
+    }
+
+    private fun initAdapter(mList: List<String>) {
+        rvBaners.layoutManager = GridLayoutManager(requireActivity(),1)
+        val mAdapter = DashboardBannerAdapter(mList) {
+            val mListImg = ArrayList<String>()
+            for (i in mList) {
+                mListImg.add(i)
+            }
+            Intent(requireActivity(), ImagePreviewActivity::class.java).apply {
+                putStringArrayListExtra("imageArray", mListImg)
+                startActivity(this)
+            }
+        }
+        rvBaners.adapter = mAdapter
     }
 
 

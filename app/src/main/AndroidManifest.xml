@@ -40,6 +40,7 @@
         <activity android:name=".ui.loan.ComplaintFeedbackActivity" />
         <activity android:name=".ui.profile.EditProfileActivity" />
         <activity android:name=".ui.WebViewActivity" />
+        <activity android:name=".ui.home.ImagePreviewActivity"/>
     </application>
 
 </manifest>

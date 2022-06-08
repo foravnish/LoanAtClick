@@ -89,7 +89,7 @@ class LoanViewModel(application: Application): AndroidViewModel(application) {
     }
 
     fun initGetDashboard( showDialog: Boolean
-    ): MutableLiveData<ApiResponseModels.ApplyLoanResponse>? {
+    ): MutableLiveData<ApiResponseModels.DashboardBannerResponse>? {
         mRepo = LoanResposatory().getInstance()
         mRepo!!.getDashboard(mContext,showDialog)
             .let { return it }

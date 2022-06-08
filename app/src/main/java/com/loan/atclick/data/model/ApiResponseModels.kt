@@ -36,6 +36,11 @@ object ApiResponseModels {
 
     }
 
+    data class DashboardBannerResponse(
+    var images: List<String>,
+    var message: String,
+    var success: Boolean
+)
     data class ApplyLoanResponse(
         var loan_id: Int,
         var message: String,

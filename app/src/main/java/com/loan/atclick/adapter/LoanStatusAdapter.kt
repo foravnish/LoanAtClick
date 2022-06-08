@@ -46,6 +46,10 @@ class LoanStatusAdapter(
                     txtAmt.text = "₹" + loan_amount
                     txtStatus.text = "" + status
                     txtDate.text = "" + apply_date
+
+                    if (status=="Disbursed"  || status=="Approved" || status=="Approve")
+                        txtStatus.visibility=View.VISIBLE
+                    else txtStatus.visibility=View.GONE
                 }
             }
 //
