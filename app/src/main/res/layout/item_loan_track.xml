@@ -116,7 +116,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="left"
                     android:fontFamily="@font/poppins_bold"
-                    android:text="Back Application No"
+                    android:text="Bank Application No"
                     android:textColor="@color/colorBlackLite"
                     android:textSize="@dimen/_12sdp" />
 
